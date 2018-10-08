@@ -12,6 +12,9 @@ before_build:
 - curl -sS -ostack.zip -L --insecure http://www.stackage.org/stack/windows-i386
 - 7z e -o.local\bin stack.zip stack.exe
 
+- curl -sS -ographviz.zip -L --insecure https://graphviz.gitlab.io/_pages/Download/windows/graphviz-2.38.zip
+- 7z e -o.local\bin graphviz.zip release\bin
+
 - curl -sS -oinstall-tl.zip -L --insecure http://mirror.ctan.org/systems/texlive/tlnet/install-tl.zip
 - 7z x -o.local\ install-tl.zip
 - move .local\install-tl* .local\install-tl
