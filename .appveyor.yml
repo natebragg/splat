@@ -37,7 +37,7 @@ environment:
     STACK_ROOT: "c:\\sr"
 
 build_script:
-- stack setup > nul
+- cd smudge && stack setup > nul && cd ..
 - mingw32-make package
 
 artifacts:
