@@ -1,5 +1,8 @@
 # From: https://www.snoyman.com/blog/2016/08/appveyor-haskell-windows-ci
 
+install:
+- git submodule update --init --recursive
+
 before_build:
 # http://help.appveyor.com/discussions/problems/6312-curl-command-not-found
 - mkdir .local\bin
