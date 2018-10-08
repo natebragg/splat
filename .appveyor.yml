@@ -6,6 +6,7 @@ install:
 before_build:
 # http://help.appveyor.com/discussions/problems/6312-curl-command-not-found
 - mkdir .local\bin
+- cp C:\MinGW\bin\windres.exe .local\bin\
 - set PATH=%CD%\.local\bin;C:\mingw-w64\x86_64-7.3.0-posix-seh-rt_v5-rev0\mingw64\bin;C:\Program Files\Git\mingw64\bin;%PATH%
 
 - curl -sS -ostack.zip -L --insecure http://www.stackage.org/stack/windows-i386
